@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>猜拳游戏</title>
 </head>
+<!-- 链接外部样式表 -->
 <link rel="stylesheet" href="style.css">
+<!-- 引入外部JavaScript脚本 -->
 <script src="game.js"></script>
 <body>
 
 <h1>猜拳游戏</h1>
 <p>请选择你的手势：</p>
+<!-- 按钮用于选择石头手势 -->
 <button onclick="playGame('rock')">石头</button>
+<!-- 按钮用于选择剪刀手势 -->
 <button onclick="playGame('scissors')">剪刀</button>
+<!-- 按钮用于选择布手势 -->
 <button onclick="playGame('paper')">布</button>
 
+<!-- 显示游戏结果的区域 -->
 <div id="result"></div>
 </body>
 </html>
