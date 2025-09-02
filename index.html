@@ -1,34 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>guessing game</title>
-   <script src="game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜拳游戏</title>
 </head>
+<link rel="stylesheet" href="style.css">
+<script src="game.js"></script>
 <body>
 
-<h1>Welcome to Rock Paper Scissors</h1>
-<button id="start-game" name="start-Game" value="start-Game">Start Game</button>
-<button id="Select-mode" name="Select-mode" value="Select-mode">SelectMode</button>
+<h1>猜拳游戏</h1>
+<p>请选择你的手势：</p>
+<button onclick="playGame('rock')">石头</button>
+<button onclick="playGame('scissors')">剪刀</button>
+<button onclick="playGame('paper')">布</button>
 
-<section>
-    <h2>Please select difficulty level</h2>
-<label>
-    <input type="radio">Easy
-    <input type="radio">Medium
-    <input type="radio">Hard
-</label>
-</section>
-
-<section>
-    <p>Please select your action</p>
-<label>
-    <input type="radio">Stone
-    <input type="radio">Scissors
-    <input type="radio">cloth
-</label>
-</section>
-
-
+<div id="result"></div>
 </body>
 </html>
